@@ -17,15 +17,10 @@ app.use(cors());
 
 //init db
 require('./dbs/init.mongodb');
-checkOverload();
+// checkOverload();
 
 //init router
-app.get('/', (req, res, next) => {
-    return res.status(200).json({
-        message: 'Welcome fantipjs!'
-    })
-});
-
+app.use('/', require('./routers'));
 //handle error
 
 
