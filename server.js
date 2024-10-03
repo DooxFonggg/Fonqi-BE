@@ -1,8 +1,8 @@
 const app = require("./src/app");
-const config = require("./src/config");
+const port = process.env.PORT || 3056;
 
-const server = app.listen(config.port, () => {
-    console.log(`WSV project start with port start with ${config.port}`);
+const server = app.listen(port, () => {
+    console.log(`WSV project start with port start with ${port}`);
 });
 
 //khai báo procress

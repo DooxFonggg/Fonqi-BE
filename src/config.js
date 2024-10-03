@@ -13,8 +13,8 @@ const {
 } = process.env;
 
 
-assert(PORT, 'PORT is required');
-assert(HOST_DB, 'HOST is required');
+// assert(PORT, 'PORT is required');
+// assert(HOST_DB, 'HOST is required');
 
 
 module.exports = {
